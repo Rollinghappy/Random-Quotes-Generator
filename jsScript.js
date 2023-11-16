@@ -37,5 +37,5 @@ document.addEventListener('DOMContentLoaded', function () {
 newQuoteBtn.addEventListener("click",random_quote);
 tweetbtn.addEventListener("click",() => {
     console.log("tweet clicked");
-    window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="'+quoteText.innerText+'"'+quoteAuthor.innerText, '_blank');
+    window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="'+quoteText.innerText+'" -'+quoteAuthor.innerText, '_blank');
 });
