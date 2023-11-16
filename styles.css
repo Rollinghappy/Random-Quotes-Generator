@@ -22,7 +22,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 1);
-    transition: background-color 1s ease-in;
+    transition: background-color 1.5s ease-in;
 }
 
 #quote-box{
@@ -59,7 +59,7 @@ body{
 
 #text,#author{
     opacity: 1;
-    transition: opacity 1s ease-in;
+    transition: opacity 1.5s ease-in;
 }
 
 #author::before{

@@ -26,7 +26,7 @@ const random_quote = () =>{
             quoteText.style.opacity=1; 
             quoteAuthor.style.opacity=1;
             overlay.style.backgroundColor="rgba(0, 0, 0, 0)";
-        },1000);
+        },1500);
     });
 }
 
