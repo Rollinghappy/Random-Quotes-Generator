@@ -11,13 +11,20 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function preloadImage(url) {
+    const img = new Image();
+    img.src = url;
+}
+
 const random_quote = () =>{
     fetch(apiLink).then(res => res.json()).then(response => {
         console.log(response)
         quoteText.style.opacity=0;
         quoteAuthor.style.opacity=0;
         overlay.style.backgroundColor="rgba(0, 0, 0, 1)";
-        randomimg='url("./bgimages/'+ getRandomInt(1,42)+'.jpg")';
+        randomimg='./bgimages/'+ getRandomInt(1,42)+'.jpg';
+        preloadImage(randomimg);
+        randomimg='url("'+randomimg+'")';
         console.log(randomimg);
         setTimeout(() => {
             body.style.backgroundImage=randomimg;
